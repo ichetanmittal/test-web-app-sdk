@@ -4,9 +4,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  const handleTestPageClick = () => {
-    // This will be replaced with your actual test page URL
-    window.location.href = 'https://xaults.com'
+  const handleIosTestPageClick = () => {
+    window.location.href = 'iosapp://test'
   }
 
   return (
@@ -16,8 +15,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           Count is {count}
         </button>
-        <button onClick={handleTestPageClick} className="test-page-button">
-          Go to Test Page
+        <p></p>
+        <button onClick={handleIosTestPageClick} className="ios-nav-button">
+          Navigate to iOS Test Page
         </button>
       </div>
     </div>
